@@ -12,12 +12,22 @@ config = {
 }
 
 # CSV file path
-csv_file_path = 'C:/Users/sivab/AppData/Local/Programs/Python/Python311/books_with_status.csv'
-
+#csv_file_path = 'C:/Users/sivab/AppData/Local/Programs/Python/Python311/books_with_status.csv'
+csv_file_path = 'books_with_descriptions.csv'
 # Create a database connection
 conn = mysql.connector.connect(**config)
 cursor = conn.cursor()
-
+"""cursor.execute(""
+CREATE TABLE lib (
+    barcode INT PRIMARY KEY,
+    location VARCHAR(50),
+    author VARCHAR(100),
+    title VARCHAR(200),
+    publisher_code VARCHAR(100),
+    status VARCHAR(50),
+    description TEXT
+)
+"")"""
 # Read CSV file into a pandas DataFrame
 df = pd.read_csv(csv_file_path)
 
@@ -25,7 +35,7 @@ df = pd.read_csv(csv_file_path)
 df = df.where(pd.notnull(df), None)
 
 # Assuming your SQL table has the same column names as the CSV
-table_name = 'main_lib'
+table_name = 'lib'
 columns = ', '.join(df.columns)
 placeholders = ', '.join(['%s'] * len(df.columns))
 
