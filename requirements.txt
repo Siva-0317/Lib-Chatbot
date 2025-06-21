@@ -1,0 +1,9 @@
+tk
+mysql-connector-python
+pyttsx3
+llama-cpp-python
+numpy
+sounddevice
+faster-whisper
+scipy
+vosk
