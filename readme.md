@@ -1,4 +1,4 @@
-# Lib-Chatbot
+# JUNE - JOURNEY TO UNDERSTAND NAVIGATE AND ENLIGHTEN
 
 A desktop chatbot for Easwari Engineering College Central Library, featuring voice recognition (Whisper), text-to-speech, LLM-powered general chat, and book search via MySQL.
 
@@ -67,6 +67,8 @@ pip install -r requirements.txt
 ## Running the Chatbot
 
 ```bash
+python june.py
+(or)
 python main.py
 ```
 
@@ -74,6 +76,7 @@ python main.py
 - Login with your register number (must exist in the `students` table).
 - Use text or hold the "Hold to Speak" button for voice input.
 - Switch between "Search" (book search) and "General Chat" (LLM-powered Q&A).
+- Now a pop up text bar is also enabled, so users can interact with the chatbot via text queries.
 
 ---
 
@@ -93,3 +96,7 @@ python main.py
 - For LLM errors, verify the GGUF model path and that the model is compatible with `llama-cpp-python`.
 
 ---
+
+## Contributors
+1. Amirthini Ramesh
+2. Sweathaa Gunasingh
