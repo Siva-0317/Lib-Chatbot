@@ -100,3 +100,12 @@ python main.py
 ## Contributors
 1. Amirthini Ramesh
 2. Sweathaa Gunasingh
+
+---
+
+## Achievement
+Presented and published this as a research paper in SALIS 2025, a national level conference on library sciences with theme "Reimagining and Transforming Libraries into Active Learning Hubs to Accelerate Global Education." 
+
+Won First Prize under the students category!
+
+---
